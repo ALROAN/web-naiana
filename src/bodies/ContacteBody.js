@@ -1,12 +1,12 @@
 import React from 'react';
 
-function ContacteBody() {
+function contacteBody() {
     return (
         <div >
-            <h1>ContacteBody</h1>
+            <h1>contacteBody</h1>
         </div>
     );
 }
 
-export default ContacteBody;
+export default contacteBody;
 

@@ -1,27 +1,38 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, NavItem, MenuItem } from 'react-bootstrap';
 
 
 function Header() {
     return (
         <div >
-            <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto">
-                        <Nav.Link href="/Presentacio">Presentacio</Nav.Link>
-                        <Nav.Link href="/Contacte">Contacte</Nav.Link>
-                        <Nav.Link href="/Recursos">Recursos</Nav.Link>
-                        <Nav.Link href="/TallersXerrades">Tallers i Xerrades</Nav.Link>
-                        <NavDropdown title="Terapies" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="/TerapiaInfantil">Terapia Infantil</NavDropdown.Item>
-                            <NavDropdown.Item href="/TerapiaIdividual">Terapia Individual</NavDropdown.Item>
+            <Navbar inverse collapseOnSelect>
+                <Navbar.Header>
+                    <Navbar.Brand>
+                        <a href="#brand">Logo</a>
+                    </Navbar.Brand>
+                    <Navbar.Toggle />
+                </Navbar.Header>
+                <Navbar.Collapse>
+
+                    <Nav pullRight>
+                        <NavItem eventKey={1} href="/Contacte">
+                            Contacte
+      </NavItem>
+                        <NavItem eventKey={2} href="/Recursos">
+                            Recursos
+      </NavItem>
+                        <NavItem eventKey={3} href="/Presentacio">
+                            Presentacio
+      </NavItem>
+                        <NavDropdown eventKey={4} title="Dropdown" id="basic-nav-dropdown">
+                            <MenuItem eventKey={4.1} href="/TallersXerrades">Tallers Xerrades</MenuItem>
+                            <MenuItem eventKey={4.2} href="/TerapiaIndividual">Terapia Individual</MenuItem>
+                            <MenuItem eventKey={4.3} href="/TerapiaInfantil">Terapia Infantil</MenuItem>
                         </NavDropdown>
+
                     </Nav>
                 </Navbar.Collapse>
-            </Navbar>
+            </Navbar>;
         </div>
     );
 }

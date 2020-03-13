@@ -1,8 +1,8 @@
-import ContacteBody from "./ContacteBody"
-import PresentacioBody from "./PresentacioBody"
-import RecursosBody from "./RecursosBody"
-import TallersXerradesBody from "./TallersXerradesBody"
-import TerapiaIndividualBody from "./TerapiaIndividualBody"
-import TerapiaInfantilBody from "./TerapiaInfantilBody"
+import contacteBody from "./ContacteBody"
+import presentacioBody from "./PresentacioBody"
+import recursosBody from "./RecursosBody"
+import tallersXerradesBody from "./TallersXerradesBody"
+import terapiaIndividualBody from "./TerapiaIndividualBody"
+import terapiaInfantilBody from "./TerapiaInfantilBody"
 
-export { ContacteBody, PresentacioBody, RecursosBody, TallersXerradesBody, TerapiaIndividualBody, TerapiaInfantilBody }
+export { contacteBody, presentacioBody, recursosBody, tallersXerradesBody, terapiaIndividualBody, terapiaInfantilBody }
